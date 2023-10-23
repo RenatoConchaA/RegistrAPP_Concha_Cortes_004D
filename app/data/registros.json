@@ -1,0 +1,73 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "Felipe",
+      "apellido": "Cortes",
+      "email": "fe.cortesp@duocuc.cl",
+      "sede": "maipu",
+      "jornada": "Diurno",
+      "asignatura1": "lenguaje",
+      "asignatura2": "matematica",
+      "ano": [
+        "4hrs"
+      ],
+      "semestre": [
+        "segundo"
+      ],
+      "horas_sem_asig1": [
+        "2hrs"
+      ],
+      "horas_sem_asig2": [
+        "4hrs"
+      ],
+      "password": "felipe1234"
+    },
+    {
+      "nombre": "leonardo",
+      "apellido": "castillo",
+      "email": "le.castillo@duocuc.cl",
+      "sede": "maipu",
+      "jornada": "Diurno",
+      "asignatura1": "lenguaje",
+      "asignatura2": "matematicas",
+      "ano": [
+        "6hrs"
+      ],
+      "semestre": [
+        "segundo"
+      ],
+      "horas_sem_asig1": [
+        "3hrs"
+      ],
+      "horas_sem_asig2": [
+        "4hrs"
+      ],
+      "password": "leo123456789",
+      "id": 2
+    },
+    {
+      "nombre": "Renato",
+      "apellido": "Concha",
+      "email": "ren.concha@duocuc.cl",
+      "sede": "Maipu",
+      "jornada": "Diurno",
+      "asignatura1": "Lenguaje",
+      "asignatura2": "Matematicas",
+      "ano": [
+        "6hrs"
+      ],
+      "semestre": [
+        "primer"
+      ],
+      "horas_sem_asig1": [
+        "3hrs"
+      ],
+      "horas_sem_asig2": [
+        "3hrs"
+      ],
+      "password": "1202Renato",
+      "id": 3
+    }
+  ]
+}

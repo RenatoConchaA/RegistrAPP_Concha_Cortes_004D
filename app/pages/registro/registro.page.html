@@ -1,0 +1,121 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="mycolor">
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()" color="warning">
+        <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+        
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Registro</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form #formulario="ngForm" (keyup.enter)="crearRegistro()">
+        <ion-list>
+          <ion-item>
+            <ion-label position="floating">Nombre: </ion-label>
+            <ion-input type="text"  name="nombre" [(ngModel)]="newUsuario.nombre"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Apellido: </ion-label>
+            <ion-input type="text" name="apellido" [(ngModel)]="newUsuario.apellido"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Email:</ion-label>
+            <ion-input type="email"  name="email" [(ngModel)]="newUsuario.email"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Sede: </ion-label>
+            <ion-input type="translucent"  name="sede" [(ngModel)]="newUsuario.sede"></ion-input>
+          </ion-item>
+          <br>
+          <ion-item>
+            <ion-label>Selecciona año</ion-label>
+              <ion-select name="horas1" [(ngModel)]="newUsuario.ano" interface="popover" value="horas" multiple="true" placeholder="Selecciona años">
+                <ion-select-option value="2hrs">2020</ion-select-option>
+                <ion-select-option value="3hrs">2021</ion-select-option>
+                <ion-select-option value="4hrs">2022</ion-select-option>
+                <ion-select-option value="6hrs">2023</ion-select-option>
+              </ion-select>
+          </ion-item>
+          <br>
+          <ion-list>
+            <ion-label position="floating">Seleccione Jornada</ion-label>
+            <ion-radio-group [(ngModel)]="newUsuario.jornada" name="jornada" value="jornada">
+              <ion-item>
+                <ion-label>Diurno</ion-label>
+                <ion-radio value="Diurno"></ion-radio>
+              </ion-item>
+              <ion-item>
+                <ion-label>Vespertino</ion-label>
+                <ion-radio value="Vespertino"></ion-radio>
+              </ion-item>
+            </ion-radio-group>
+          </ion-list>
+          <br>  
+          <ion-item>
+            <ion-label>Asignatura N°1</ion-label>
+            <ion-input type="text" [(ngModel)]="newUsuario.asignatura1" placeholder="Lenguaje..." name="asignatura1"
+            ></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label>Horas Semanales 1ra Asignatura</ion-label>
+            <ion-item>
+              <ion-label>Selecciona la cantidad de horas</ion-label>
+              <ion-select name="horas2" [(ngModel)]="newUsuario.horas_sem_asig1" interface="popover" value="horas" multiple="true" placeholder="Selecciona cantidad de horas">
+                <ion-select-option value="2hrs">2 Horas</ion-select-option>
+                <ion-select-option value="3hrs">3 Horas</ion-select-option>
+                <ion-select-option value="4hrs">4 Horas</ion-select-option>
+                <ion-select-option value="5hrs">5 Horas</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-item>
+          <ion-item>
+            <ion-label>Asignatura N°2</ion-label>
+            <ion-input type="text" [(ngModel)]="newUsuario.asignatura2" placeholder="Matematica..." name="asignatura1"
+            ></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label>Horas Semanales 2da Asignatura</ion-label>
+            <ion-item>
+              <ion-label>Selecciona la cantidad de horas</ion-label>
+              <ion-select name="horas2" [(ngModel)]="newUsuario.horas_sem_asig2" interface="popover" value="horas" multiple="true" placeholder="Selecciona cantidad de horas">
+                <ion-select-option value="2hrs">2 Horas</ion-select-option>
+                <ion-select-option value="3hrs">3 Horas</ion-select-option>
+                <ion-select-option value="4hrs">4 Horas</ion-select-option>
+                <ion-select-option value="5hrs">5 Horas</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-item>
+          <ion-item>
+            <ion-label>Selecciona el semestre</ion-label>
+            <ion-select name="semestre" [(ngModel)]="newUsuario.semestre" value="semestre" multiple="true" placeholder="Selecciona el semestre">
+              <ion-select-option value="primer">Primer Semestre</ion-select-option>
+              <ion-select-option value="segundo">Segundo Semestre</ion-select-option>
+            </ion-select>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Contraseña: </ion-label>
+            <ion-input type="password"  name="password" [(ngModel)]="newUsuario.password"></ion-input>
+          </ion-item>
+        </ion-list>
+        <br>
+        <ion-button (click)="crearRegistro()" expand="block" fill="solid" shape="round">
+          Enviar
+        </ion-button>
+      </form>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="mycolor">
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,19 @@
+[
+    {"nombre":"Todos los Domingos","fecha":" ","irrenunciable":"0","tipo":"Civil"},
+    {"nombre":"Año Nuevo","fecha":"01/01","irrenunciable":"1","tipo":"Civil"},
+    {"nombre":"Feriado adiciona","fecha":"02/01","irrenunciable":"0","tipo":"Civil"},
+    {"nombre":"Viernes Santo","fecha":"07/04","irrenunciable":"0","tipo":"Religioso"},
+    {"nombre":"Sabado Santo","fecha":"08/04","irrenunciable":"0","tipo":"Religioso"},
+    {"nombre":"Dia Nacional del Trabajador","fecha":"07/05","irrenunciable":"1","tipo":"Civil"},
+    {"nombre":"Dia de las Glorias Navales","fecha":"21/05","irrenunciable":"0","tipo":"Civil"},
+    {"nombre":"Dia Nacional de los Pueblos Indígenas","fecha":"21/06","irrenunciable":"1","tipo":"Civil"},
+    {"nombre":"San Pedro y San Pablo","fecha":"26/06","irrenunciable":"0","tipo":"Religioso"},
+    {"nombre":"Día de la Virgen del Carmen","fecha":"16/07","irrenunciable":"0","tipo":"Religioso"},
+    {"nombre":"Asunción de la Virgen","fecha":"15/08","irrenunciable":"0","tipo":"Religioso"},
+    {"nombre":"Independencia Nacional","fecha":"18/09","irrenunciable":"1","tipo":"Civil"},
+    {"nombre":"Dia de las Glorias del Ejercito","fecha":"19/09","irrenunciable":"1","tipo":"Civil"},
+    {"nombre":"Encuentro de dos Mundos","fecha":"09/10","irrenunciable":"0","tipo":"Civil"},
+    {"nombre":"Dia de las Iglesias Evangelicas y Protestantes","fecha":"27/10","irrenunciable":"0","tipo":"Religioso"},
+    {"nombre":"Dia de Todos los Santos","fecha":"01/11","irrenunciable":"0","tipo":"Religioso"},
+    {"nombre":"Navidad","fecha":"25/12","irrenunciable":"1","tipo":"Religioso"}
+]
