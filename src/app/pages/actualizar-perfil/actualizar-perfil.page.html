@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="mycolor">
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()" color="warning">
+        <ion-icon slot="icon-only" name="menu-outline"></ion-icon>        
+      </ion-button>
+    </ion-buttons>
+    <img src="assets/DuocUC.png" alt="" class="Duoc">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Actualizar Perfil</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">Username:</ion-label>
+      <ion-input type="text" name="txtUsername" [(ngModel)]="usuario.nombre" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Password:</ion-label>
+      <ion-input type="password" name="txtPass" [(ngModel)]="usuario.password" minlength="8" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Rol: </ion-label>
+      <ion-select name="txtRol" [(ngModel)]="usuario.rol">
+        <ion-select-option value="academico">Docente</ion-select-option>
+        <ion-select-option value="servicio">Alumno</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="updateUsuario()" expand="block" color="success">Actualizar Usuario</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

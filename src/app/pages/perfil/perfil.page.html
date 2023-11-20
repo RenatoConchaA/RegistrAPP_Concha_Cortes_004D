@@ -1,0 +1,80 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="mycolor">
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()" color="warning">
+        <ion-icon slot="icon-only" name="menu-outline"></ion-icon>        
+      </ion-button>
+    </ion-buttons>
+    <img src="assets/DuocUC.png" alt="" class="Duoc">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Perfil</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <h1 style="text-align: center;">Este es tu perfil {{ nombre_usuario }}</h1>
+
+  <br><br>
+
+  <ion-card>
+    <ion-item>
+      <ion-label>Usuario:</ion-label>
+      <ion-label>{{ nombre_usuario }}</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Apellido:</ion-label>
+      <ion-label>{{ apellido_usuario }}</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Email:</ion-label>
+      <ion-label>{{ email_usuario }}</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Asignatura 1:</ion-label>
+      <ion-label>{{ asig1_usuario }}</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Horas asignatura :</ion-label>
+      <ion-label>{{ horas1_usuario }}</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Asignatura 2:</ion-label>
+      <ion-label>{{ asig2_usuario }}</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Horas asignatura :</ion-label>
+      <ion-label>{{ horas2_usuario }}</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Año:</ion-label>
+      <ion-label>{{ ano_semestre }}</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Semestre:</ion-label>
+      <ion-label>{{ semestre_usuario }}</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Rol:</ion-label>
+      <ion-label>{{ rol_usuario }}</ion-label>
+    </ion-item>
+
+  
+    <ion-button  style="margin-left: 15px; margin-bottom: 15px;"[routerLink]="['/actualizar-perfil', id_usuario]"color="warning"> 
+      <ion-icon name="create"></ion-icon> </ion-button>
+    <ion-button style="margin: 15px"[routerLink]="['/informacion']"color="success"> 
+      Informacion</ion-button>
+    </ion-card>
+</ion-content>
+

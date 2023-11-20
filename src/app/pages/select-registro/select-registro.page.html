@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="mycolor">
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()" color="warning">
+        <ion-icon slot="icon-only" name="menu-outline"></ion-icon>        
+      </ion-button>
+    </ion-buttons>
+    <ion-title size="large">Seleccione Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+    </ion-toolbar>
+  </ion-header>
+
+  <h1 style="text-align: center; color: blue;">Seleccione su registro</h1>
+  <br><br>
+  <img style="text-align: center;" src="assets/DuocUC.png" alt="" class="Duoc">
+  <br><br><br><br><br><br><br>
+  <ion-card>
+    <ion-button expand="block" fill="solid" shape="round" routerLink="/registro">
+      Registrar docente
+    </ion-button>
+    
+    <ion-button expand="block" fill="solid" shape="round" routerLink="/registro-alumno">
+      Registrar alumno
+    </ion-button>
+    
+  </ion-card>
+  
+</ion-content>

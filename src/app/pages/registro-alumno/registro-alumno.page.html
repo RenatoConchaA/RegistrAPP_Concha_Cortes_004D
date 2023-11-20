@@ -1,0 +1,71 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="mycolor">
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()" color="warning">
+        <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+        
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Registro</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form [formGroup]="registerAlumnoForm">
+        <ion-list>
+          <ion-item>
+            <ion-label position="floating">Nombre: </ion-label>
+            <ion-input type="text"  name="nombre" formControlName="nombre" required ></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Apellido: </ion-label>
+            <ion-input type="text" name="apellido" formControlName="apellido" required></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Email:</ion-label>
+            <ion-input type="email"  name="email" formControlName="email" required></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Sede: </ion-label>
+            <ion-input type="translucent"  name="sede" formControlName="sede" required></ion-input>
+          </ion-item>
+          <br>
+          <ion-list>
+            <ion-label position="floating">Seleccione Jornada</ion-label>
+            <ion-radio-group formControlName="jornada" name="jornada" value="jornada">
+              <ion-item>
+                <ion-label>Diurno</ion-label>
+                <ion-radio value="Diurno"></ion-radio>
+              </ion-item>
+              <ion-item>
+                <ion-label>Vespertino</ion-label>
+                <ion-radio value="Vespertino"></ion-radio>
+              </ion-item>
+            </ion-radio-group>
+          </ion-list>
+          <br>
+          <ion-item>
+            <ion-label>Rol</ion-label>
+            <ion-select name="rol" formControlName="rol" value="rol" multiple="true" placeholder="Rol">
+              <ion-select-option value="Alumno">Alumno</ion-select-option>
+            </ion-select>
+          </ion-item>
+          <br>
+          <ion-item>
+            <ion-label position="floating">Contraseña: </ion-label>
+            <ion-input type="password"  name="password" formControlName="password" required></ion-input>
+          </ion-item>
+        </ion-list>
+        <br>
+        <ion-button (click)="crearRegistro()" expand="block" fill="solid" shape="round">
+          Enviar
+        </ion-button>
+      </form>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

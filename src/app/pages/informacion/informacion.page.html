@@ -1,0 +1,81 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="mycolor">
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()" color="warning">
+        <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Informacion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" >
+
+  <img src="assets/DuocUC.png" alt="" class="D_UC">
+  
+  <h1>¡Hola de nuevo {{ usuario }} a RegitrAPP!</h1>
+
+  <ion-title class="usoAPP">¿Cómo usar la aplicación?</ion-title>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Menú</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <img src="assets/menu2.png" alt="">
+      En el menú encontraras los apartados que entrega RegistrAPP.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Inicio</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <img src="assets/inicio2.png" alt="" class="inicio">
+      En el Inicio encontraras 2 botones, el de iniciar sesion y el botón de rgistro si es que no posees una cuenta.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Registro</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <img src="assets/registro2.png" alt="">
+      <br>
+      Aquí podras registrarte con tus datos personales e institucionales para que puedas ocupar correctamente esta aplicación.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Login</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <img src="assets/login2.png" alt="">
+      Al iniciar sesion con tu correo y contraseña, podras utilizar las funcionalidades que te entrega la aplicación RegistrAPP.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Lista de los Feriados Nacionales</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button (click)="Api()">
+        Aquí
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-button name="Salir" (click)="logOut()">Salir</ion-button>
+  
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="mycolor">
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-footer>

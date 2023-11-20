@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="mycolor">
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()" color="warning">
+        <ion-icon slot="icon-only" name="menu-outline"></ion-icon>        
+      </ion-button>
+    </ion-buttons>
+    <img src="assets/DuocUC.png" alt="" class="Duoc">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title class="QR">QR</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <p class="Hola">Hola {{ usuario }}!</p>
+
+  <ion-item>
+    <ion-label position="floating">Asignatura a comenzar</ion-label>
+    <ion-input type="text" [(ngModel)]="data.texto"></ion-input>
+  </ion-item>
+
+  <ion-button (click)="generarQr()" expand="block" class="Gqr" shape="round">
+    Generar QR
+  </ion-button>
+
+  <ion-card class="ion-text-center">
+    <ion-card-content>
+      <qrcode [qrdata]="mensaje" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
+    </ion-card-content>
+  </ion-card>
+
+
+
+</ion-content>
